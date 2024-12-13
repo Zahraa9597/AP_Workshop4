@@ -23,5 +23,8 @@ public class Vote {
         Vote vote = (Vote) o;
         return Objects.equals(voter, vote.voter) && Objects.equals(date, vote.date);
     }
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(voter, date);
+    }
 }
