@@ -17,4 +17,15 @@ public class Voting {
        this.voters = voters;
     }
 
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public HashMap<String, HashSet<Vote>> getChoices() {
+        return choices;
+    }
 }
