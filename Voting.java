@@ -82,7 +82,16 @@ public class Voting {
         // Add the person to the voters list if they haven't already voted
         if (!this.voters.contains(person)) {
             this.voters.add(person);
-            // sorry i have writed the 2 vote methods in the same commit 
+            // sorry i have writed the 2 vote methods in the same commit
         }
     }
+    public void printResults() {
+        System.out.println("printResults:");
+        // Iterate over the keys (choices) in the choices map
+        for (String choice : this.choices.keySet()) {
+            HashSet<Vote> votes = this.choices.get(choice);
+            System.out.println(choice + ": " + votes.size());
+        }
+    }
+
 }
