@@ -13,4 +13,5 @@ public class VotingSystem {
     public ArrayList<Voting> getVotingList() {
         return votingList;
     }
+    
 }
